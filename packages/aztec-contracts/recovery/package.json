@@ -1,0 +1,10 @@
+{
+  "name": "@zk-7579-recovery/recovery-contract",
+  "version": "1.0.0",
+  "description": "Recovery contract for ZK 7579 cross-chain recovery",
+  "scripts": {
+    "build": "aztec-nargo compile && aztec-postprocess-contract",
+    "test": "aztec test",
+    "clean": "rm -rf target"
+  }
+}

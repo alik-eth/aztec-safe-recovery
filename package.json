@@ -1,0 +1,25 @@
+{
+  "name": "zk-7579-recovery",
+  "version": "1.0.0",
+  "description": "ZK 7579 Recovery - Aztec/Wormhole cross-chain recovery system with Noir contracts",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "npm run build:contracts && turbo run build && npm run copy:artifacts",
+    "build:contracts": "cd packages/aztec-contracts && npm run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "export:token": "node ./scripts/export-token-artifact.mjs",
+    "copy:artifacts": "npm run export:token && node ./scripts/copy-artifacts.mjs"
+  },
+  "workspaces": [
+    "packages/*",
+    "packages/*/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2"
+  },
+  "packageManager": "npm@10.9.0"
+}

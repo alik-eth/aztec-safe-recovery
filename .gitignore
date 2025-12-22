@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Turbo
+.turbo/
+**/.turbo/
+*.turbo-build.log
+**/*.turbo-build.log
+
+# Build outputs
+packages/aztec-contracts/emitter/target/
+packages/aztec-contracts/token-artifacts/
+packages/evm-contracts/out/
+packages/evm-contracts/cache/
+packages/evm-contracts/lib/
+packages/relayer/bin/
+packages/frontend/.next/
+packages/frontend/out/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+.mcp.json
+.mcp-funnel.json
+
+# Quality tools
+.qlty/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Foundry
+packages/evm-contracts/broadcast/
+packages/evm-contracts/**/broadcast/
+packages/evm-contracts/**/cache/
+packages/evm-contracts/.gas-snapshot
+
+# Aztec build artifacts
+*.bak
+
+# Go
+packages/relayer/go.sum
+
+# Foundry broadcast artifacts
+packages/evm-contracts/recovery-sol/broadcast/
+packages/relayer/relayer
+
+# Relayer logs
+packages/relayer/*.log
+
+# Private keys and secrets
+*.key
+*.pem
+keystore.json
+secrets/
+wallet.json

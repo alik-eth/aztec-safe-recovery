@@ -1,0 +1,15 @@
+{
+  "name": "@zk-7579-recovery/aztec-contracts",
+  "version": "1.0.0",
+  "description": "Aztec contracts for ZK 7579 cross-chain recovery",
+  "private": true,
+  "scripts": {
+    "build": "cd recovery && npm run build",
+    "build:recovery": "cd recovery && npm run build",
+    "deploy": "cd recovery-ts && npm run deploy:recovery",
+    "deploy:recovery": "cd recovery-ts && npm run deploy:recovery",
+    "deploy:accounts": "cd recovery-ts && npm run deploy:accounts",
+    "test": "cd recovery && npm run test",
+    "clean": "cd recovery && npm run clean"
+  }
+}

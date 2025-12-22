@@ -1,0 +1,23 @@
+{
+  "name": "@zk-7579-recovery/recovery-ts",
+  "version": "1.0.0",
+  "description": "TypeScript utilities and scripts for ZK 7579 Recovery",
+  "type": "module",
+  "scripts": {
+    "deploy:accounts": "tsx scripts/deploy_accounts.ts",
+    "deploy:recovery": "tsx scripts/deploy_recovery.ts",
+    "e2e": "tsx scripts/e2e_test.ts"
+  },
+  "dependencies": {
+    "@aztec/accounts": "v3.0.0-devnet.5",
+    "@aztec/aztec.js": "v3.0.0-devnet.5",
+    "@aztec/noir-contracts.js": "v3.0.0-devnet.5",
+    "@aztec/pxe": "v3.0.0-devnet.5",
+    "@aztec/test-wallet": "v3.0.0-devnet.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.7.2"
+  }
+}

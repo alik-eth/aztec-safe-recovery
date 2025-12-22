@@ -1,0 +1,13 @@
+[submodule "packages/evm-contracts/lib/openzeppelin-contracts"]
+	path = packages/evm-contracts/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "packages/evm-contracts/lib/wormhole"]
+	path = packages/evm-contracts/lib/wormhole
+	url = https://github.com/wormhole-foundation/wormhole
+[submodule "packages/aztec-contracts/wormhole-source"]
+	path = packages/aztec-contracts/wormhole-source
+	url = https://github.com/NethermindEth/wormhole
+	branch = aztec
+[submodule "packages/evm-contracts/recovery-sol/lib/forge-std"]
+	path = packages/evm-contracts/recovery-sol/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

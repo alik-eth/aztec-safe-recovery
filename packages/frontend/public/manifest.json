@@ -1,0 +1,17 @@
+{
+  "name": "Aztec Guardian Recovery",
+  "short_name": "Aztec Recovery",
+  "description": "Privacy-preserving social recovery for Safe wallets using secret guardians on Aztec Network",
+  "iconPath": "./logo.svg",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    }
+  ],
+  "providedBy": {
+    "name": "Cualli",
+    "url": "https://github.com/cualli"
+  }
+}

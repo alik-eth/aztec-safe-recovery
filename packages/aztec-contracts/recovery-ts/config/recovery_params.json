@@ -1,0 +1,9 @@
+{
+  "salt": "0x09d41387db7f431964b40de754af2fc1fddb29dbfafc515e816892196189b95b",
+  "deployer": "0x10b0a8e51eb1b9419712591b16ed6cbbb9c8c03f3fbd675eaa0b7ecb1c450670",
+  "constructorArgs": [
+    "0x10b0a8e51eb1b9419712591b16ed6cbbb9c8c03f3fbd675eaa0b7ecb1c450670",
+    "0x2b13cff4daef709134419f1506ccae28956e02102a5ef5f2d0077e4991a9f493",
+    "1"
+  ]
+}
