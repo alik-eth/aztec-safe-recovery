@@ -4,7 +4,25 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 
 > **Demo Ready**: This project is deployed on Aztec Devnet + Sepolia and ready for testing.
 
-## Quick Start (Demo)
+## Demo
+
+### 1. Enable Recovery Module on Safe
+
+https://github.com/user-attachments/assets/enable-module.mp4
+
+https://github.com/alik-eth/aztec-safe-recovery/raw/main/media/1.%20Enable%20Module.mp4
+
+### 2. Recovery In Progress
+
+![Recovery in progress](media/2.Recovery%20in%20progress%20screen.png)
+
+### 3. Recovery Complete
+
+https://github.com/user-attachments/assets/recovery-complete.mp4
+
+https://github.com/alik-eth/aztec-safe-recovery/raw/main/media/4.%20Recovery%20Complete.mp4
+
+## Quick Start
 
 **Requirements**: Chrome 85+, Azguard Wallet.
 
