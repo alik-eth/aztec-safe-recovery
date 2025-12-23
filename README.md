@@ -6,7 +6,7 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 
 ## Quick Start (Demo)
 
-**Browser Requirements**: Chrome 85+, Firefox 78+, Safari 14+ (ES2020 support required)
+**Requirements**: Chrome 85+, Azguard Wallet.
 
 ```bash
 # 1. Clone and install
@@ -27,9 +27,10 @@ npm run dev
 ```
 
 **Demo Flow:**
+-1. **Create Safe Wallet and add Aztec Guardian Recovery in Apps**: [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Ffrontend-coral-gamma-16.vercel.app&chain=sep)
 1. **Owner Setup** (`/setup`): Connect Safe → Connect Aztec wallet → Add guardians → Set threshold
 2. **Guardian Vote** (`/guardian`): Connect Aztec wallet → Enter Safe address → Vote for new owner
-3. **Recovery Complete**: Once threshold reached, Wormhole relays to Sepolia and Safe ownership transfers
+3. **Recovery Complete**: Once threshold reached, Wormhole relays to Sepolia and Safe ownership transfers, guardian must enter safe address manually(for now).
 
 ## The Problem
 
