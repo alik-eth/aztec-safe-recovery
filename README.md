@@ -13,9 +13,7 @@ Either:
 
 ### 1. Setup: Enable Recovery Module on Safe
 
-Open Safe → Apps → Custom Apps → Add frontend-coral-gamma-16.vercel.app → Open it →
-→ Press "Get Started" → Connect Aztec wallet → Enable module →
-→ Press "Manage Guardians" → Add new guardian
+Open Safe → Apps → Custom Apps → Add frontend-coral-gamma-16.vercel.app → Open it → Press "Get Started" → Connect Aztec wallet → Enable module → Press "Manage Guardians" → Add new guardian
 
 ![Enable Module](media/1-enable-module.webp)
 
