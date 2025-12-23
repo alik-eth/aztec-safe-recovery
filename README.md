@@ -8,19 +8,15 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 
 ### 1. Enable Recovery Module on Safe
 
-https://github.com/user-attachments/assets/enable-module.mp4
-
-https://github.com/alik-eth/aztec-safe-recovery/raw/main/media/1.%20Enable%20Module.mp4
+![Enable Module](media/1-enable-module.webp)
 
 ### 2. Recovery In Progress
 
-![Recovery in progress](media/2.Recovery%20in%20progress%20screen.png)
+![Recovery in progress](media/2-recovery-in-progress.webp)
 
 ### 3. Recovery Complete
 
-https://github.com/user-attachments/assets/recovery-complete.mp4
-
-https://github.com/alik-eth/aztec-safe-recovery/raw/main/media/4.%20Recovery%20Complete.mp4
+![Recovery Complete](media/4-recovery-complete.webp)
 
 ## Quick Start
 
