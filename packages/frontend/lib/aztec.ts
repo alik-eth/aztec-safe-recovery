@@ -1,5 +1,23 @@
 import { aztecConfig } from "./contracts";
 
+/**
+ * Patch artifact to add missing isInternal field to functions
+ * This is needed due to version mismatch between @aztec/noir-contracts.js and wallet
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function patchArtifact<T>(artifact: T): T {
+  const art = artifact as any;
+  if (!art.functions) return artifact;
+
+  return {
+    ...art,
+    functions: art.functions.map((fn: any) => ({
+      ...fn,
+      isInternal: fn.isInternal ?? false,
+    })),
+  } as T;
+}
+
 export interface AztecWallet {
   address: string;
   isConnected: boolean;

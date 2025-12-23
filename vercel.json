@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build --workspace=aztec-recovery-frontend",
+  "outputDirectory": "packages/frontend/.next",
+  "framework": "nextjs"
+}

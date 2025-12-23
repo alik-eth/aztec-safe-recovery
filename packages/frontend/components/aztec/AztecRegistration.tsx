@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { aztecConfig } from "@/lib/contracts";
 import { shortenAddress } from "@/lib/utils";
-import { formatAztecAddress } from "@/lib/aztec";
+import { formatAztecAddress, patchArtifact } from "@/lib/aztec";
 import { Shield, CheckCircle, Loader2, AlertCircle } from "lucide-react";
 import type { AztecWallet } from "@azguardwallet/aztec-wallet";
 
@@ -109,15 +109,16 @@ export function AztecRegistration({
 
       // Get Sponsored FPC instance for fee payment
       console.log("Setting up sponsored fee payment...");
+      const patchedFPCArtifact = patchArtifact(SponsoredFPCContract.artifact);
       const sponsoredFPC = await getContractInstanceFromInstantiationParams(
-        SponsoredFPCContract.artifact,
+        patchedFPCArtifact as any,
         { constructorArgs: [], salt: new Fr(0) }
       );
       const sponsoredPaymentMethod = new SponsoredFeePaymentMethod(sponsoredFPC.address);
       console.log("Sponsored FPC address:", sponsoredFPC.address.toString());
 
       // Register the FPC contract with wallet
-      await wallet.registerContract(sponsoredFPC, SponsoredFPCContract.artifact);
+      await wallet.registerContract(sponsoredFPC, patchedFPCArtifact as any);
 
       // Register the Recovery contract with the wallet
       console.log("Registering Recovery contract with wallet...");

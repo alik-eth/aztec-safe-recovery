@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Input } from "@/components/ui/Input";
 import { shortenAddress } from "@/lib/utils";
-import { formatAztecAddress } from "@/lib/aztec";
+import { formatAztecAddress, patchArtifact } from "@/lib/aztec";
 import { Rocket, CheckCircle, Loader2, AlertCircle, Settings } from "lucide-react";
 import type { AztecWallet } from "@azguardwallet/aztec-wallet";
 
@@ -59,12 +59,13 @@ export function AztecContractDeployer({
 
       // Setup sponsored fee payment
       console.log("Setting up sponsored fee payment...");
+      const patchedFPCArtifact = patchArtifact(SponsoredFPCContract.artifact);
       const sponsoredFPC = await getContractInstanceFromInstantiationParams(
-        SponsoredFPCContract.artifact,
+        patchedFPCArtifact as any,
         { constructorArgs: [], salt: new Fr(0) }
       );
       const sponsoredPaymentMethod = new SponsoredFeePaymentMethod(sponsoredFPC.address);
-      await wallet.registerContract(sponsoredFPC, SponsoredFPCContract.artifact);
+      await wallet.registerContract(sponsoredFPC, patchedFPCArtifact as any);
 
       // Prepare constructor args
       const wormholeAddr = AztecAddress.fromString(WORMHOLE_ADDRESS);

@@ -11,7 +11,7 @@ import { useAzguard } from "@/hooks/useAzguard";
 import { useSafeApps } from "@/hooks/useSafeApps";
 import { contracts } from "@/lib/contracts";
 import { shortenAddress } from "@/lib/utils";
-import { formatAztecAddress, isValidAztecAddress } from "@/lib/aztec";
+import { formatAztecAddress, isValidAztecAddress, patchArtifact } from "@/lib/aztec";
 import { createPublicClient, http } from "viem";
 import { sepolia } from "viem/chains";
 import {
@@ -371,14 +371,15 @@ export default function GuardianPage() {
       const candidateAddr = EthAddress.fromString(newOwnerAddress);
 
       // Setup sponsored fee payment
+      const patchedFPCArtifact = patchArtifact(SponsoredFPCContract.artifact);
       const sponsoredFPC = await getContractInstanceFromInstantiationParams(
-        SponsoredFPCContract.artifact,
+        patchedFPCArtifact as any,
         { constructorArgs: [], salt: new Fr(0) }
       );
       const sponsoredPaymentMethod = new SponsoredFeePaymentMethod(sponsoredFPC.address);
 
       try {
-        await aztecWallet.registerContract(sponsoredFPC, SponsoredFPCContract.artifact);
+        await aztecWallet.registerContract(sponsoredFPC, patchedFPCArtifact as any);
         await aztecWallet.registerContract(contractAddr, artifact);
       } catch (regErr) {
         console.warn("Contract registration warning:", regErr);
