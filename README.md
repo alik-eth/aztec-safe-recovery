@@ -7,7 +7,9 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 ## Demo
 
 **Try it now:** 
+
 Either:
+
 - Deploy a new safe with our app: [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Ffrontend-coral-gamma-16.vercel.app&chain=sep)
 - Use existing safe and add app in the "Apps" section as "Custom App"
 
