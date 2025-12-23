@@ -6,45 +6,41 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 
 ## Demo
 
-### 1. Enable Recovery Module on Safe
+**Try it now:** [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Ffrontend-coral-gamma-16.vercel.app&chain=sep)
+
+### 1. Setup: Enable Recovery Module on Safe
+
+Connect Safe → Connect Aztec wallet → Add guardians → Set threshold → Enable module
 
 ![Enable Module](media/1-enable-module.webp)
 
-### 2. Recovery In Progress
+### 2. Guardian Vote: Recovery In Progress
+
+Guardian connects Aztec wallet → Enters Safe address → Votes for new owner
 
 ![Recovery in progress](media/2-recovery-in-progress.webp)
 
 ### 3. Recovery Complete
 
+Once threshold reached, Wormhole relays to Sepolia and Safe ownership transfers
+
 ![Recovery Complete](media/4-recovery-complete.webp)
 
 ## Quick Start
 
-**Requirements**: Chrome 85+, Azguard Wallet.
+**Requirements**: Chrome 85+, [Azguard Wallet](https://azguardwallet.io/)
 
 ```bash
 # 1. Clone and install
-git clone <your-repo-url>
-cd zk-7579-recovery
+git clone https://github.com/alik-eth/aztec-safe-recovery.git
+cd aztec-safe-recovery
 npm install
 
-# 2. Build and start the relayer (requires Wormhole spy on localhost:7073)
-cd packages/relayer
-cp .env.example .env  # Edit with your private key
-go build -o relayer .
-./relayer
-
-# 3. Start the frontend (in another terminal)
+# 2. Start the frontend
 cd packages/frontend
 npm run dev
 # Open http://localhost:3000
 ```
-
-**Demo Flow:**
-1. **Create Safe Wallet and add Aztec Guardian Recovery in Apps**: [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Ffrontend-coral-gamma-16.vercel.app&chain=sep)
-2. **Owner Setup** (`/setup`): Connect Safe → Connect Aztec wallet → Add guardians → Set threshold
-3. **Guardian Vote** (`/guardian`): Connect Aztec wallet → Enter Safe address → Vote for new owner
-4. **Recovery Complete**: Once threshold reached, Wormhole relays to Sepolia and Safe ownership transfers, guardian must enter safe address manually(for now).
 
 ## The Problem
 
