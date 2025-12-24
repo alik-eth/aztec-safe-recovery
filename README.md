@@ -10,7 +10,7 @@ Privacy-preserving social recovery for Safe wallets using secret guardians on Az
 
 Either:
 
-- Deploy a new safe with our app: [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Ffrontend-coral-gamma-16.vercel.app&chain=sep)
+- Deploy a new safe with our app: [Safe App Link](https://app.safe.global/share/safe-app?appUrl=https%3A%2F%2Faztec-safe-recovery.vercel.app&chain=sep)
 - Use existing safe and add app in the "Apps" section as "Custom App"
 
 ### 1. Setup: Enable Recovery Module on Safe
@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/80f89e16-d367-4b41-a55f-119fcd2d6da6
 
 ### 2. Guardian Portal
 
-Guardian opens frontend-coral-gamma-16.vercel.app → connects Aztec wallet → Enters Safe address → Votes for new owner
+Guardian opens [Guardian Portal](https://aztec-safe-recovery.vercel.app/guardian) → connects Aztec wallet → Enters Safe address → Votes for new owner
 
 https://github.com/user-attachments/assets/21cf87e3-3125-4538-b5c0-4b3795fce1cc
 
