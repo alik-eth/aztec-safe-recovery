@@ -17,13 +17,13 @@ Either:
 
 Open Safe → Apps → Custom Apps → Add frontend-coral-gamma-16.vercel.app → Open it → Press "Get Started" → Connect Aztec wallet → Enable module → Press "Manage Guardians" → Add new guardian
 
-<video src="https://ue1ux310la.ufs.sh/f/pG8rpZ83YylkTw0zq9U0HwqyN9As856PGTcxYaMrjlh1SO2K" controls width="100%"></video>
+https://github.com/user-attachments/assets/80f89e16-d367-4b41-a55f-119fcd2d6da6
 
 ### 2. Guardian Portal
 
 Guardian opens frontend-coral-gamma-16.vercel.app → connects Aztec wallet → Enters Safe address → Votes for new owner
 
-<video src="https://ue1ux310la.ufs.sh/f/pG8rpZ83Yylk2l5hxHHrQkbFn0EIABiNq4soerv93OgjGcZy" controls width="100%"></video>
+https://github.com/user-attachments/assets/21cf87e3-3125-4538-b5c0-4b3795fce1cc
 
 ### 3. Recovery In Progress
 
@@ -35,7 +35,7 @@ Guardians vote for recovery candidate
 
 Once threshold reached, Wormhole relays to Sepolia and Safe ownership transfers
 
-<video src="https://ue1ux310la.ufs.sh/f/pG8rpZ83YylkwOr2bvLtIC1E6J0A7iRl5fsurGyMO9SWN3jp" controls width="100%"></video>
+https://github.com/user-attachments/assets/5e3c442e-4aa3-4bc8-8f7f-e1ea80ec7601
 
 ## Quick Start
 
