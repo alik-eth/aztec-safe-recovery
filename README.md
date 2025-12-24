@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/21cf87e3-3125-4538-b5c0-4b3795fce1cc
 
 Guardians vote for recovery candidate
 
-![Recovery in progress](media/3.recovery-in-progress.webp)
+![Recovery in progress](media/3.recovery-in-progress.png)
 
 ### 4. Recovery Complete
 
