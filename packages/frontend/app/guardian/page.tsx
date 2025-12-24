@@ -401,8 +401,6 @@ export default function GuardianPage() {
         .wait();
 
       console.log("Vote receipt:", receipt);
-      setSuccess(`Vote submitted for ${shortenAddress(newOwnerAddress)}`);
-      setShowVoteForm(false);
 
       // Refresh vote count and check if recovery was triggered
       const { AztecAddress: AztecAddr, EthAddress: EthAddr } = await import("@aztec/aztec.js/addresses");
@@ -436,6 +434,11 @@ export default function GuardianPage() {
         const currentBlock = await client.getBlockNumber();
         setPollingStartBlock(currentBlock);
         setRelayStatus("awaiting");
+        // Keep the form open to show "Recovery in Progress" UI
+      } else {
+        // Recovery not triggered, show success and close form
+        setSuccess(`Vote submitted for ${shortenAddress(newOwnerAddress)}`);
+        setShowVoteForm(false);
       }
 
     } catch (err) {
